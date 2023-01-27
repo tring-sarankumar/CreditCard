@@ -2,7 +2,7 @@ package assignment.creditcard;
 import java.util.Scanner;
 public class CreditCard 
 {
-    public static void main( String[] args ) throws CloneNotSupportedException
+    public static void main( String[] args )
     {
         CreditCardLogic obj = new CreditCardLogic("saran",1234567890,1225);
         CreditCardLogic obj2 = obj.credit();
