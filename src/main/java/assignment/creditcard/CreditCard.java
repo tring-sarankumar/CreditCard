@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 public class CreditCard 
 {
-    public static void main( String[] args ) throws CloneNotSupportedException
+    public static void main( String[] args )
     {
     	Logger log =  Logger.getLogger("CreditCard");
         CreditCardLogic obj = new CreditCardLogic("saran",1234567890,1225);
