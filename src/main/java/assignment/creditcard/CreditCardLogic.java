@@ -1,9 +1,12 @@
 package assignment.creditcard;
 
+import java.util.logging.Logger;
+
 public class CreditCardLogic implements Cloneable{
 	String name;
 	Integer cardno;
 	Integer expdate;
+	Logger log =  Logger.getLogger("CreditCard");
 	
 	CreditCardLogic(String name,Integer cardno,Integer expdate){
 		this.name=name;
@@ -20,7 +23,7 @@ public class CreditCardLogic implements Cloneable{
 			return (CreditCardLogic) super.clone();
 			
 		}catch(CloneNotSupportedException e){
-			System.out.println("Cloning err");
+			log.info("Cloning err");
 			return this;
 		}
 	}
