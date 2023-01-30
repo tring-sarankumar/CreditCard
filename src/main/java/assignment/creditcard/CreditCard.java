@@ -14,7 +14,7 @@ public class CreditCard
         Integer newnum =sc.nextInt();
         sc.close();
         
-        if((obj2.testEqual())==true) {
+        if((obj2.checkNum(newnum))==true) {
         	log.info("Values are same");
         }
         else {
